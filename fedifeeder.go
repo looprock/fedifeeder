@@ -41,7 +41,7 @@ var logger = zerolog.New(os.Stdout).With().Timestamp().Logger().Level(zerolog.In
 var Port int
 
 func executeCronJob(cRemote *mastodon.Client, cLocal *mastodon.Client) {
-	gocron.Every(30).Second().Do(recordNewPosters, cRemote, cLocal)
+	gocron.Every(60).Second().Do(recordNewPosters, cRemote, cLocal)
 	<-gocron.Start()
 }
 
