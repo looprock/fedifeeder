@@ -1,5 +1,5 @@
 # fedifeeder
-My attempt at 'relaying' traffic from a relay-less mastodon instance. fedifeeder scrapes the public timeline of an instance and follow users that show up there, with the intention of creating a more 'organic' federated timeline on a personal Activitypub server instance.
+My attempt at 'relaying' traffic from a relay-less mastodon instance. fedifeeder scrapes the public timeline of an instance and follow users that show up there, with the intention of creating a more 'organic' federated timeline on a personal Activitypub server instance which doesn't currently support relays.
 
 The concept around this can be found here: https://github.com/hachyderm/community/issues/32
 
