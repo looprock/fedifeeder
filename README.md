@@ -13,7 +13,6 @@ It also supports any value under the DEBUG env var to get more output and make t
 to access that data hit: localhost:8080/debug when DEBUG mode is enabled.
 
 # TODO
-* don't use this again until it supports the #nobot tag in profile!
 * figure out if I actually need a TOKEN to read the public timeline using go-mastodon
 * support a config file
 * Move to using streams
