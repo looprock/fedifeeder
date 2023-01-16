@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"regexp"
 	"strings"
 	"time"
 
@@ -252,6 +253,18 @@ func userToID(c *mastodon.Client, user string) (mastodon.ID, error) {
 		return "NaN", errors.New(errMsg)
 	} else {
 		accountId := mID.Accounts[0].ID
+		// exclude people who have #nobot in their bio
+		noBot := mID.Accounts[0].Note
+		logger.Debug().Msg(noBot)
+		matched, err := regexp.Match("(?i)tags/nobot", []byte(noBot))
+		if err != nil {
+			return "NaN", err
+		}
+		if matched {
+			errMsg := "#nobot set for user " + user
+			logger.Warn().Msg(errMsg)
+			return "NaN", errors.New(errMsg)
+		}
 		logMsg := fmt.Sprintf("ADDING user: %s, id: %s\n", user, accountId)
 		logger.Info().Msg(logMsg)
 		return accountId, nil
