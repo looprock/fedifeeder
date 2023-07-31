@@ -10,7 +10,7 @@ Currently fedifeeder only accepts parameters via environment variables. See: `en
 
 a simple status is available at: localhost:8080/healthz
 
-Setting the DEBUG env var to any value will make the /debug endpoint available for information on the current uses and IDs fedifeeder knows about. To access that data hit: localhost:8080/debug when DEBUG mode is enabled.
+Setting the DEBUG env var to any value will make the /debug endpoint available for information on the current uses and IDs fedifeeder knows about.
 
 # How I used fedifeeder
 
@@ -18,7 +18,7 @@ I chose to be up-front about what I was doing and set up a `fedifeeder` account 
 
 Please note:
 1) a friend request was made through the regular channels, which could be, and sometimes was, rejected
-2) the #nobot tag was honored
+2) the #nobot tag is honored
 
 # TODO
 * figure out if I actually need a TOKEN to read the public timeline using go-mastodon
