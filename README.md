@@ -18,7 +18,7 @@ I chose to be up-front about what I was doing and set up a `fedifeeder` account 
 
 Please note:
 1) a friend request was made through the regular channels, which could be, and sometimes was, rejected
-2) the #nobot tag was honored).
+2) the #nobot tag was honored
 
 # TODO
 * figure out if I actually need a TOKEN to read the public timeline using go-mastodon
