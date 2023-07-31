@@ -8,9 +8,9 @@ To use fedifeeder, both the source and target servers must allow API access.
 
 Currently fedifeeder only accepts parameters via environment variables. See: `env.sh.example` for an example of what to set.
 
-a simple status is available at: localhost:8080/healthz
+a simple status is available at: http://localhost:8080/healthz
 
-Setting the DEBUG env var to any value will make the /debug endpoint available for information on the current uses and IDs fedifeeder knows about.
+Setting the DEBUG env var to any value will make the http://localhost:8080/debug endpoint available for information on the current uses and IDs fedifeeder knows about.
 
 # How I used fedifeeder
 
